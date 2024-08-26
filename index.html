@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css" />
+  </head>
+  <body>
+    <header></header>
+    <section class="container">
+      <article class="row">
+        <main class="main-content">
+          <div class="bar">
+            <nav class="nav-bar">
+              <a href="#" target="#" class="logo"> Oleg Cod </a>
+              <ul class="nav-menu">
+                <li><a href="#" class="nav-title">Home</a></li>
+                <li><a href="#" class="nav-title">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="form-container">
+            <div class="form-heading">
+              <h1 class="form-title">contact</h1>
+            </div>
+            <form action="#" method="post">
+              <div class="name-wraper">
+                <div class="form-fname">
+                  <label for="fname"> <h4>First name</h4> </label><br />
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="First Name"
+                    required
+                    maxlength="20"
+                  /><br /><!-- size if necessary -->
+                </div>
+                <div class="form-lname">
+                  <label for="lname">
+                    <h4>Last name</h4>
+                  </label><br />
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Las Name"
+                    required
+                    maxlength="20"
+                  /><br /><!-- size if necessary -->
+                </div>
+              </div>
+
+              <div class="contact-wraper">
+                <div class="email-contact">
+                  <label for="email"> <h4>Email</h4> </label><br />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="email"
+                    required
+                    maxlength="20"
+                  /><br />
+                </div>
+                <div class="phone-contact">
+                  <label for="phone"> 
+                    <h4>phone number</h4> 
+                  </label><br />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="phone number"
+                  /><br />
+                </div>
+              </div>
+
+              <!-- TEXT AREA -->
+              <div class="form-text-area">
+                <label for="subject">
+                  <div class="title-message">
+                    <h4>Message</h4>
+                  </div>
+                </label>
+                <textarea
+                  name="subject"
+                  id="subject"
+                  placeholder="Message"
+                  style="height: 200px"
+                ></textarea>
+                <div class="form-submit">
+                  <input type="submit" value="send" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+      </article>
+    </section>
+    <footer></footer>
+  </body>
+</html>
+
+<!-- maximum-scale=1, user-scalable=no = 
+ запобігає збільшенню екрана на моб телефоні  -->
